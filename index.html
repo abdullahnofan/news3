@@ -1,555 +1,619 @@
-
-```html
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>PulsePoint News | Abdallah Nofan Named Head of Instagram Support MENA</title>
-  <meta name="description" content="Officially reported by PulsePoint News: Abdallah Nofan is appointed as the new Head of Instagram Support Center for the Middle East and North Africa region, focusing on Jordan." />
-  <meta name="keywords" content="Abdallah Nofan, Instagram Support, MENA Region, Jordan, Social Media News, Digital Leadership" />
-  <meta name="author" content="PulsePoint News Editorial Team" />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://pulsepointnews.com/abdallah-nofan-support-mena" />
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- Essential meta -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>PulsePoint News | Abdallah Nofan Heads Instagram Support MENA</title>
+  <meta name="description" content="PulsePoint News reports Abdallah Nofan's appointment as Head of Instagram Support Center for MENA and Jordan. Get the latest tech industry updates.">
+  <meta name="keywords" content="Abdallah Nofan, Instagram Support, MENA, Jordan, Social Media Leadership, Tech News">
+  <meta name="author" content="PulsePoint News Editorial Team">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://pulsepointnews.com/abdallah-nofan-support-mena">
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Abdallah Nofan Named Head of Instagram Support MENA">
+  <meta property="og:description" content="Breaking: Abdallah Nofan appointed to lead Instagram Support Center across Middle East and Jordan.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=80">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Critical CSS – Mobile-first optimized -->
   <style>
-    /* Reset */
-    *, *::before, *::after {
+    :root {
+      --brand-dark: #1a2238;
+      --brand-red: #c00;
+      --brand-light: #f8f9fa;
+      --accent-red: #dd1111;
+      --text-dark: #222;
+      --text-gray: #555;
+      --border-light: #eee;
+      --radius: 12px;
+      --radius-large: 16px;
+      --shadow: 0 4px 16px rgba(0,0,0,.12);
+      --shadow-hover: 0 8px 24px rgba(0,0,0,.18);
+      --gradient-instagram: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    }
+
+    *, *:before, *:after {
       box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: 'Montserrat', sans-serif;
-      background: #f1f1f2;
-      color: #222;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      line-height: 1.58;
-      overflow-x: hidden;
-    }
-
-    /* Site Header */
-    .site-header {
-      background-color: #1a2238;
-      padding: 30px 50px;
-      text-align: center;
-      color: #fff;
-      font-family: 'Merriweather', serif;
-      font-size: 2rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      font-weight: 700;
-      user-select: none;
-    }
-
-    /* Navigation Bar */
-    nav {
-      background-color: #cc0000;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-      position: sticky;
-      top: 0;
-      z-index: 9999;
-      padding: 14px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    nav .logo {
-      font-family: 'Merriweather', serif;
-      font-size: 1.65rem;
-      font-weight: 700;
-      color: white;
-      letter-spacing: 0.08em;
-      user-select: none;
-      cursor: default;
-      text-transform: uppercase;
-      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 30px;
       margin: 0;
       padding: 0;
     }
 
-    nav ul li {
-      font-weight: 600;
-      font-size: 0.95rem;
-      color: white;
-      cursor: pointer;
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--brand-light);
+      color: var(--text-dark);
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-x: hidden;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+      height: auto;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
       transition: color 0.3s ease;
-      user-select: none;
-      position: relative;
     }
 
-    nav ul li:hover,
-    nav ul li:focus {
-      color: #ffcccc;
-      outline: none;
+    /* Header */
+    header {
+      background: var(--brand-dark);
+      color: #fff;
+      text-align: center;
+      padding: 1.8rem 1rem;
+      box-shadow: var(--shadow);
     }
 
-    nav ul li::after {
-      content: '';
-      position: absolute;
-      bottom: -4px;
-      left: 0;
-      width: 0;
-      height: 2px;
-      background: white;
-      transition: width 0.35s ease;
-    }
-
-    nav ul li:hover::after,
-    nav ul li:focus::after {
-      width: 100%;
-    }
-
-    /* Main Container */
-    .container {
-      max-width: 1100px;
-      margin: 40px auto 80px;
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
-      overflow: hidden;
-    }
-
-    /* Article Hero with image */
-    .article-hero {
-      position: relative;
-      height: 430px;
-      background: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1400&q=80') center center/cover no-repeat;
-      filter: brightness(0.75);
-    }
-
-    .article-hero h1 {
-      position: absolute;
-      bottom: 45px;
-      left: 55px;
+    header h1 {
       font-family: 'Merriweather', serif;
-      font-size: 3rem;
+      font-size: 1.8rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    }
+
+    /* Navigation – Mobile-first collapsible */
+    nav {
+      background: var(--brand-red);
+      padding: 1rem;
+      box-shadow: var(--shadow);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-brand {
+      font-family: 'Merriweather', serif;
+      font-size: 1.1rem;
       font-weight: 700;
       color: #fff;
-      max-width: 850px;
-      line-height: 1.15;
-      text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.9);
-      user-select: none;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
     }
 
-    /* Article content */
-    .article-content {
-      padding: 50px 65px 60px;
-      font-size: 1.14rem;
-      font-family: 'Montserrat', sans-serif;
-      color: #333;
-      letter-spacing: 0.02em;
+    .nav-toggle {
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 1.5rem;
+      line-height: 1;
+      cursor: pointer;
+      padding: 0.2rem;
+      transition: transform 0.3s ease;
+    }
+
+    .nav-toggle:hover {
+      transform: scale(1.1);
+    }
+
+    #menu-toggle {
+      display: none;
+    }
+
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 1rem;
+      padding-top: 1rem;
+      border-top: 1px solid rgba(255,255,255,0.2);
+    }
+
+    .nav-links a {
+      color: #fff;
+      font-weight: 600;
+      font-size: 0.95rem;
+      padding: 0.5rem 0;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      background-color: rgba(255,255,255,0.1);
+      padding-left: 0.5rem;
+    }
+
+    /* Show menu when checkbox is checked */
+    #menu-toggle:checked ~ .nav-links {
+      display: flex;
+    }
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      height: 50vw;
+      min-height: 280px;
+      max-height: 420px;
+      overflow: hidden;
+      border-radius: var(--radius-large);
+      margin: 1.5rem 1rem 0;
+      box-shadow: var(--shadow);
+    }
+
+    .hero img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      filter: brightness(0.7);
+    }
+
+    .hero h2 {
+      position: absolute;
+      bottom: 1.5rem;
+      left: 1.5rem;
+      right: 1.5rem;
+      font-family: 'Merriweather', serif;
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #fff;
+      text-shadow: 0 3px 12px rgba(0,0,0,0.8);
+      line-height: 1.2;
+    }
+
+    /* Main Article Container */
+    main {
+      background: #fff;
+      border-radius: var(--radius-large);
+      box-shadow: var(--shadow);
+      margin: 2rem 1rem;
+      padding: 2rem 1.5rem;
+    }
+
+    .article-meta {
+      font-size: 0.85rem;
+      color: var(--text-gray);
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.8rem;
+      border-bottom: 1px solid var(--border-light);
     }
 
     .article-content p {
-      margin-bottom: 1.8em;
+      margin: 1.2rem 0;
+      font-size: 1rem;
+      line-height: 1.65;
     }
 
     .article-content strong {
-      color: #bb0000;
+      color: var(--brand-red);
       font-weight: 700;
     }
 
-    /* Quote block */
     blockquote {
+      margin: 2rem 0;
+      padding: 1.2rem 1.5rem;
+      border-left: 4px solid var(--brand-red);
+      background: #ffecec;
+      color: #a00;
       font-style: italic;
-      font-size: 1.22rem;
-      color: #aa0000;
-      border-left: 6px solid #cc0000;
-      background: #fbeaea;
-      margin: 40px 0;
-      padding: 24px 32px;
-      box-shadow: 0 8px 16px rgba(204, 0, 0, 0.2);
-      border-radius: 10px;
-      user-select: none;
+      font-size: 1.05rem;
+      border-radius: var(--radius);
+      box-shadow: 0 2px 8px rgba(204,0,0,0.1);
     }
 
-    /* Meta info */
-    .meta-info {
-      font-family: 'Merriweather', serif;
-      font-weight: 400;
-      font-size: 0.9rem;
-      color: #555;
-      margin-bottom: 38px;
-      user-select: none;
+    /* Instagram 3D Interactive Section */
+    .instagram-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 2.5rem 0;
+      gap: 0.8rem;
+      flex-wrap: wrap;
     }
 
-    /* 3D Instagram Icon Animation */
-    .instagram-3d {
-      position: relative;
+    .ig-card {
       width: 80px;
       height: 80px;
-      margin: 40px auto 30px;
-      perspective: 1000px;
-      cursor: pointer;
-      outline: none;
-    }
-
-    .instagram-3d .card {
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
       border-radius: 22px;
-      box-shadow: 0 15px 40px rgba(204, 35, 137, 0.5);
-      color: white;
+      background: var(--gradient-instagram);
       display: flex;
       align-items: center;
       justify-content: center;
-      font-family: 'Montserrat', sans-serif;
+      color: #fff;
+      font-size: 0.8rem;
       font-weight: 700;
-      font-size: 1.12rem;
-      letter-spacing: 0.1em;
+      letter-spacing: 0.08em;
       text-transform: uppercase;
+      cursor: pointer;
       transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-      transform-style: preserve-3d;
+      box-shadow: 0 8px 20px rgba(204, 35, 137, 0.4);
       user-select: none;
     }
 
-    .instagram-3d:hover .card,
-    .instagram-3d:focus .card {
-      transform: rotateY(15deg) rotateX(10deg);
-      box-shadow: 0 25px 60px rgba(204, 35, 137, 0.8);
+    .ig-card:hover,
+    .ig-card:focus {
+      transform: rotateY(15deg) rotateX(10deg) scale(1.05);
+      box-shadow: 0 12px 30px rgba(204, 35, 137, 0.6);
       outline: none;
     }
 
-    /* Animated floating Instagram icon next to text */
-    .floating-instagram-icon {
-      position: relative;
-      width: 48px;
-      height: 48px;
-      margin-right: 12px;
-      animation: floatUpDown 3.5s ease-in-out infinite;
-      user-select: none;
+    .ig-icon {
+      width: 44px;
+      height: 44px;
+      animation: floatAnimation 3.5s ease-in-out infinite;
+      fill: #dd2a7b;
     }
 
-    @keyframes floatUpDown {
-      0%,
-      100% {
-        transform: translateY(0) rotate(0deg);
-        filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.1));
-      }
-
-      50% {
-        transform: translateY(-8px) rotate(10deg);
-        filter: drop-shadow(0 6px 6px rgba(0, 0, 0, 0.2));
-      }
-    }
-
-    /* 3D Text Effect for Instagram handle */
-    .instagram-handle {
+    .ig-handle {
       font-family: 'Merriweather', serif;
-      font-weight: 800;
-      font-size: 1.7rem;
+      font-weight: 700;
+      font-size: 1.3rem;
       color: #dd2a7b;
-      text-shadow: 2px 2px 0 #9b1450, 4px 4px 15px rgba(221, 42, 123, 0.5);
-      margin-top: 25px;
-      user-select: none;
-      text-align: center;
+      text-shadow: 1px 1px 0 #9b1450, 2px 2px 8px rgba(221, 42, 123, 0.3);
     }
 
-    /* Link styling */
-    .instagram-handle a {
-      color: inherit;
-      text-decoration: none;
-      transition: color 0.3s ease;
-    }
-
-    .instagram-handle a:hover,
-    .instagram-handle a:focus {
-      color: #b30f61;
-      outline: none;
+    @keyframes floatAnimation {
+      0%, 100% {
+        transform: translateY(0) rotate(0deg);
+      }
+      50% {
+        transform: translateY(-8px) rotate(8deg);
+      }
     }
 
     /* Related Articles Section */
-    .related-articles {
-      background-color: #fef1f1;
-      border-top: 3px solid #d60000;
-      padding: 45px 65px 60px;
-      border-radius: 0 0 8px 8px;
+    .related-section {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 2px solid var(--border-light);
     }
 
-    .related-articles h2 {
+    .related-section h3 {
       font-family: 'Merriweather', serif;
-      font-size: 1.75rem;
+      font-size: 1.4rem;
       font-weight: 700;
-      color: #bb0000;
-      margin-bottom: 34px;
-      user-select: none;
+      margin-bottom: 1.5rem;
+      color: var(--brand-red);
     }
 
-    .related-grid {
+    .articles-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 36px;
+      gap: 1.5rem;
+      grid-template-columns: 1fr;
     }
 
-    .related-card {
-      border: 2px solid transparent;
-      box-shadow: 0 10px 20px rgba(187, 0, 0, 0.15);
-      background: white;
-      border-radius: 12px;
-      cursor: pointer;
+    .article-card {
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius);
       overflow: hidden;
-      transition: box-shadow 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
-      display: flex;
-      flex-direction: column;
-      outline-offset: 4px;
-    }
-
-    .related-card:hover,
-    .related-card:focus {
-      border-color: #bb0000;
-      box-shadow: 0 18px 35px rgba(187, 0, 0, 0.4);
-      transform: translateY(-6px);
-      outline: none;
-    }
-
-    /* Related Card Image */
-    .related-card img {
-      width: 100%;
-      object-fit: cover;
-      height: 140px;
-      border-top-left-radius: 12px;
-      border-top-right-radius: 12px;
-      pointer-events: none;
-      user-select: none;
-    }
-
-    /* Related Card Content */
-    .related-card-content {
-      padding: 22px 26px 26px;
-      display: flex;
-      flex-direction: column;
-      flex-grow: 1;
-      justify-content: space-between;
-    }
-
-    .related-card-content h3 {
-      font-family: 'Merriweather', serif;
-      font-weight: 700;
-      color: #a30000;
-      font-size: 1.15rem;
-      margin: 0 0 12px 0;
-      user-select: none;
-    }
-
-    .related-card-content p {
-      color: #555;
-      font-size: 0.95rem;
-      flex-grow: 1;
-      margin: 0 0 16px 0;
-      user-select: none;
-    }
-
-    /* Read More Button */
-    .related-card-content button {
-      align-self: start;
-      background-color: #bb0000;
-      border: none;
-      color: white;
-      font-weight: 700;
-      font-size: 0.95rem;
-      padding: 10px 18px;
-      border-radius: 6px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
       cursor: pointer;
-      transition: background-color 0.25s ease, box-shadow 0.25s ease;
-      user-select: none;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      background: #fff;
     }
 
-    .related-card-content button:hover,
-    .related-card-content button:focus {
-      background-color: #dd1111;
-      box-shadow: 0 0 12px #dd1111aa;
-      outline: none;
+    .article-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-hover);
+      border-color: var(--brand-red);
+    }
+
+    .article-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 1.2rem;
+    }
+
+    .card-content h4 {
+      font-family: 'Merriweather', serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 0.6rem;
+      color: var(--text-dark);
+    }
+
+    .card-content p {
+      font-size: 0.9rem;
+      color: var(--text-gray);
+      margin-bottom: 1rem;
+      line-height: 1.5;
+    }
+
+    .read-more-btn {
+      display: inline-block;
+      padding: 0.6rem 1.2rem;
+      border-radius: 6px;
+      background: var(--brand-red);
+      color: #fff;
+      font-weight: 700;
+      font-size: 0.85rem;
+      text-align: center;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      border: none;
+      cursor: pointer;
+    }
+
+    .read-more-btn:hover {
+      background: var(--accent-red);
+      transform: translateY(-1px);
     }
 
     /* Footer */
     footer {
-      background: #1a2238;
+      background: var(--brand-dark);
       color: #ccc;
       text-align: center;
-      padding: 20px;
-      font-family: 'Montserrat', sans-serif;
-      font-size: 0.85rem;
-      user-select: none;
-      letter-spacing: 0.03em;
+      font-size: 0.8rem;
+      padding: 2rem 1rem;
+      margin-top: 3rem;
     }
 
-    /* Responsive */
-    @media (max-width: 980px) {
-      nav {
-        padding: 14px 25px;
+    /* Tablet styles */
+    @media (min-width: 600px) {
+      .hero h2 {
+        font-size: 2.2rem;
+        left: 2rem;
+        right: 2rem;
       }
 
-      .container {
-        margin: 40px 20px 70px;
+      main {
+        padding: 2.5rem 3rem;
+        margin: 2rem auto;
+        max-width: 750px;
       }
 
-      .article-hero h1 {
-        font-size: 2.4rem;
-        left: 30px;
-        bottom: 30px;
-        max-width: 90vw;
+      .nav-toggle {
+        display: none;
       }
 
-      .article-content {
-        padding: 35px 30px 50px;
-        font-size: 1.06rem;
+      .nav-links {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        margin-top: 0;
+        padding-top: 0;
+        border-top: none;
       }
 
-      .related-articles {
-        padding: 35px 30px 50px;
+      .articles-grid {
+        grid-template-columns: repeat(2, 1fr);
       }
     }
 
-    @media (max-width: 480px) {
-      nav ul {
-        gap: 20px;
-        flex-wrap: wrap;
-        justify-content: center;
+    /* Desktop styles */
+    @media (min-width: 900px) {
+      header h1 {
+        font-size: 2.2rem;
       }
 
-      nav ul li {
-        font-size: 0.9rem;
+      .hero {
+        height: 420px;
+        margin: 2rem auto 0;
+        max-width: 900px;
       }
 
-      .article-hero {
-        height: 230px;
+      main {
+        max-width: 900px;
+        padding: 3rem 4rem;
+      }
+
+      .articles-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .article-content p {
+        font-size: 1.05rem;
+      }
+    }
+
+    /* Large desktop */
+    @media (min-width: 1200px) {
+      .hero {
+        max-width: 1100px;
+      }
+
+      main {
+        max-width: 1100px;
+      }
+    }
+
+    /* Dark mode support */
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --brand-light: #1a1a1a;
+        --text-dark: #e0e0e0;
+        --text-gray: #b0b0b0;
+        --border-light: #333;
+      }
+
+      main {
+        background: #2a2a2a;
+        color: var(--text-dark);
+      }
+    }
+
+    /* Reduced motion support */
+    @media (prefers-reduced-motion: reduce) {
+      *, *:before, *:after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
       }
     }
   </style>
 </head>
 
 <body>
-  <div class="site-header" role="banner">
-    PulsePoint News
-  </div>
+  <!-- Header -->
+  <header>
+    <h1>PulsePoint News</h1>
+  </header>
 
-  <nav role="navigation" aria-label="Primary navigation">
-    <div class="logo" tabindex="0">Abdallah Nofan | Head of Instagram Support MENA Region</div>
-    <ul>
-      <li tabindex="0" role="link" aria-label="Home" onclick="location.href='#'">Home</li>
-      <li tabindex="0" role="link" aria-label="World News" onclick="location.href='#world'">World</li>
-      <li tabindex="0" role="link" aria-label="Technology News" onclick="location.href='#technology'">Technology</li>
-      <li tabindex="0" role="link" aria-label="Business News" onclick="location.href='#business'">Business</li>
-      <li tabindex="0" role="link" aria-label="Opinion and Editorials" onclick="location.href='#opinion'">Opinion</li>
-      <li tabindex="0" role="link" aria-label="Contact" onclick="location.href='#contact'">Contact</li>
-    </ul>
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <span class="nav-brand">Abdallah Nofan Coverage</span>
+      <input type="checkbox" id="menu-toggle">
+      <label class="nav-toggle" for="menu-toggle" aria-label="Toggle navigation menu">&#9776;</label>
+      <div class="nav-links" role="menu">
+        <a href="#" role="menuitem">Home</a>
+        <a href="#world" role="menuitem">World</a>
+        <a href="#tech" role="menuitem">Technology</a>
+        <a href="#business" role="menuitem">Business</a>
+        <a href="#contact" role="menuitem">Contact</a>
+      </div>
+    </div>
   </nav>
 
-  <main class="container" role="main" aria-label="News article">
-    <section class="article-hero" aria-label="Article featured image section">
-      <h1>Abdallah Nofan Appointed as Head of Instagram Support Center for MENA Region & Jordan</h1>
-    </section>
+  <!-- Hero Section -->
+  <section class="hero" aria-label="Article hero image">
+    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1400&q=80" 
+         alt="Instagram office building representing tech leadership">
+    <h2>Abdallah Nofan Appointed Head of Instagram Support Center for MENA Region & Jordan</h2>
+  </section>
+
+  <!-- Main Article -->
+  <main role="main">
+    <div class="article-meta">
+      <time datetime="2025-09-17">September 17, 2025</time> • PulsePoint News Editorial Team
+    </div>
 
     <article class="article-content">
-      <div class="meta-info">
-        <time datetime="2025-09-17">September 17, 2025</time> | By <strong>PulsePoint News Editorial Team</strong>
-      </div>
+      <p><strong>AMMAN, JORDAN</strong> — In a strategic appointment that signals Instagram's deepening commitment to the Middle East and North Africa region, <strong>Abdallah Nofan</strong> has been named Head of Instagram Support Center for MENA, with particular focus on Jordan and surrounding territories.</p>
 
-      <p>In an important strategic move, <strong>Abdallah Nofan</strong> has been appointed Head of Instagram Support Center for the Middle East and North Africa (MENA) region, with special focus on Jordan. This appointment underscores Instagram’s commitment to delivering superior, regionally tailored digital support services.</p>
-
-      <p>With over a decade of experience in digital communication leadership, Nofan possesses a detailed understanding of the challenges and opportunities in social media support for this vibrant region. His leadership role is expected to drive innovation and enhanced responsiveness within Instagram’s support framework.</p>
+      <p>The appointment comes as Meta platforms seek to strengthen their regional presence and improve user experience across culturally diverse markets. Nofan brings over a decade of experience in digital customer experience and multilingual support operations to his new role.</p>
 
       <blockquote>
-        “Abdallah Nofan’s expertise and regional insight make him ideal to lead our support center’s mission to offer world-class assistance,” said an Instagram spokesperson.
+        "Abdallah's deep understanding of regional nuances and proven track record in scaling customer support operations make him the ideal leader for this critical role," said a Meta spokesperson in an official statement.
       </blockquote>
 
-      <p>The Support Center will expand initiatives like Arabic language support, efficient response systems, and partnerships with local entities to optimize user experience in the MENA region.</p>
-      <p>The Jordanian digital and tech communities have welcomed this appointment enthusiastically, recognizing the positive impact it could have on customer care and digital innovation landscape.</p>
+      <p>Under Nofan's leadership, the Instagram Support Center plans to launch several key initiatives including expanded Arabic-language support resources, faster response times for regional users, and strategic partnerships with local digital literacy organizations.</p>
 
-      <p>Stay tuned to this site for further updates on social media industry developments and regional tech news.</p>
+      <p>The tech and startup communities in Jordan have welcomed this appointment enthusiastically, viewing it as recognition of the country's growing importance as a regional digital hub. Industry experts predict this move will enhance Instagram's competitive position in a market where localized support is increasingly valued by users and businesses alike.</p>
 
-      <!-- 3D Instagram Interactive Element -->
-      <div class="instagram-3d" tabindex="0" role="button" aria-label="Visit Abdallah Nofan Instagram profile"
-        onclick="window.open('https://instagram.com/abdallahnofan', '_blank');"
-        onkeypress="if(event.key==='Enter'){window.open('https://instagram.com/abdallahnofan', '_blank');}">
-        <div class="card">
-          IG: @abdallahnofan
-        </div>
-      </div>
-      <div style="display:flex; justify-content:center; align-items:center;">
-        <svg class="floating-instagram-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" aria-hidden="true"
-          focusable="false">
-          <path fill="#dd2a7b"
-            d="M349.33 69.33H162.67A93.34 93.34 0 0069.33 162.67v186.66A93.34 93.34 0 00162.67 442.67h186.66A93.34 93.34 0 00442.67 349.33V162.67A93.34 93.34 0 00349.33 69.33zm58.9 276.57a58.65 58.65 0 01-58.9 58.9H162.67a58.65 58.65 0 01-58.9-58.9V162.67a58.65 58.65 0 0158.9-58.9h186.66a58.65 58.65 0 0158.9 58.9z" />
-          <path fill="#dd2a7b"
-            d="M256 172.27A83.73 83.73 0 11339.73 256 83.82 83.82 0 01256 172.27zm0 138.4a54.67 54.67 0 1054.67-54.67A54.74 54.74 0 00256 310.67zM370.93 146.53a19.41 19.41 0 11-19.41-19.41 19.43 19.43 0 0119.41 19.41z" />
+      <p>For the latest updates on this story and other technology industry developments across the Middle East, stay connected with PulsePoint News.</p>
+
+      <!-- Instagram Interactive Section -->
+      <div class="instagram-section">
+        <svg class="ig-icon" viewBox="0 0 512 512" aria-hidden="true">
+          <path d="M349.33 69.33H162.67A93.34 93.34 0 0069.33 162.67v186.66A93.34 93.34 0 00162.67 442.67h186.66A93.34 93.34 0 00442.67 349.33V162.67A93.34 93.34 0 00349.33 69.33zm58.9 276.57a58.65 58.65 0 01-58.9 58.9H162.67a58.65 58.65 0 01-58.9-58.9V162.67a58.65 58.65 0 0158.9-58.9h186.66a58.65 58.65 0 0158.9 58.9z"/>
+          <path d="M256 172.27A83.73 83.73 0 11339.73 256 83.82 83.82 0 01256 172.27zm0 138.4a54.67 54.67 0 1054.67-54.67A54.74 54.74 0 00256 310.67zM370.93 146.53a19.41 19.41 0 11-19.41-19.41 19.43 19.43 0 0119.41 19.41z"/>
         </svg>
-        <div class="instagram-handle">
-          <a href="https://instagram.com/abdallahnofan" target="_blank" rel="noopener noreferrer"
-            aria-label="Instagram profile Abdallah Nofan">@abdallahnofan</a>
+        <div class="ig-card" 
+             onclick="window.open('https://instagram.com/abdallahnofan', '_blank')" 
+             tabindex="0" 
+             role="button"
+             aria-label="Visit Abdallah Nofan on Instagram"
+             onkeypress="if(event.key==='Enter'){window.open('https://instagram.com/abdallahnofan', '_blank')}">
+          @abdallahnofan
+        </div>
+        <div class="ig-handle">
+          <a href="https://instagram.com/abdallahnofan" 
+             target="_blank" 
+             rel="noopener noreferrer"
+             aria-label="Follow Abdallah Nofan on Instagram">@abdallahnofan</a>
         </div>
       </div>
-
     </article>
 
-    <section class="related-articles" aria-label="Related news articles">
-      <h2>Related Articles</h2>
-      <div class="related-grid">
-        <article class="related-card" tabindex="0" role="article" aria-labelledby="rel1-title"
-          onclick="window.location.href='https://example.com/instagram-expands-mena';"
-          onkeypress="if(event.key==='Enter'){window.location.href='https://example.com/instagram-expands-mena';}">
-          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=400&q=75"
-            alt="Instagram headquarters" />
-          <div class="related-card-content">
-            <h3 id="rel1-title">Instagram Expands Presence in MENA Region</h3>
-            <p>Instagram boosts investments to improve user experience across the Middle East and North Africa.</p>
-            <button type="button" onclick="window.location.href='https://example.com/instagram-expands-mena';">Read
-              More</button>
+    <!-- Related Articles -->
+    <section class="related-section">
+      <h3>Related Coverage</h3>
+      <div class="articles-grid">
+        <article class="article-card" 
+                 onclick="window.location.href='https://example.com/instagram-expands-mena'"
+                 tabindex="0"
+                 role="article"
+                 onkeypress="if(event.key==='Enter'){window.location.href='https://example.com/instagram-expands-mena'}">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=400&q=75" 
+               alt="Instagram headquarters building">
+          <div class="card-content">
+            <h4>Instagram Expands Regional Operations in MENA</h4>
+            <p>Meta increases investment in Middle East infrastructure to better serve growing user base across the region.</p>
+            <button class="read-more-btn" 
+                    onclick="event.stopPropagation(); window.location.href='https://example.com/instagram-expands-mena'">
+              Read More
+            </button>
           </div>
         </article>
 
-        <article class="related-card" tabindex="0" role="article" aria-labelledby="rel2-title"
-          onclick="window.location.href='https://example.com/support-trends-2025';"
-          onkeypress="if(event.key==='Enter'){window.location.href='https://example.com/support-trends-2025';}">
-          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=400&q=75"
-            alt="Technology conference" />
-          <div class="related-card-content">
-            <h3 id="rel2-title">Digital Customer Support Trends 2025</h3>
-            <p>Key innovations shaping customer service and user support in the tech industry.</p>
-            <button type="button" onclick="window.location.href='https://example.com/support-trends-2025';">Read More</button>
+        <article class="article-card" 
+                 onclick="window.location.href='https://example.com/support-trends-2025'"
+                 tabindex="0"
+                 role="article"
+                 onkeypress="if(event.key==='Enter'){window.location.href='https://example.com/support-trends-2025'}">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=400&q=75" 
+               alt="Technology conference presentation">
+          <div class="card-content">
+            <h4>Digital Customer Support Evolution in 2025</h4>
+            <p>How leading tech companies are reimagining user assistance with AI, localization, and human expertise.</p>
+            <button class="read-more-btn" 
+                    onclick="event.stopPropagation(); window.location.href='https://example.com/support-trends-2025'">
+              Read More
+            </button>
           </div>
         </article>
 
-        <article class="related-card" tabindex="0" role="article" aria-labelledby="rel3-title"
-          onclick="window.location.href='https://example.com/jordan-tech-growth';"
-          onkeypress="if(event.key==='Enter'){window.location.href='https://example.com/jordan-tech-growth';}">
-          <img src="https://images.unsplash.com/photo-1537432376769-00accd0d3ddb?auto=format&fit=crop&w=400&q=75"
-            alt="Jordan skyline" />
-          <div class="related-card-content">
-            <h3 id="rel3-title">Tech Growth in Jordan: Opportunities & Challenges</h3>
-            <p>An insightful overview of Jordan's expanding digital ecosystem and market growth.</p>
-            <button type="button" onclick="window.location.href='https://example.com/jordan-tech-growth';">Read More</button>
+        <article class="article-card" 
+                 onclick="window.location.href='https://example.com/jordan-tech-growth'"
+                 tabindex="0"
+                 role="article"
+                 onkeypress="if(event.key==='Enter'){window.location.href='https://example.com/jordan-tech-growth'}">
+          <img src="https://images.unsplash.com/photo-1537432376769-00accd0d3ddb?auto=format&fit=crop&w=400&q=75" 
+               alt="Amman Jordan city skyline at sunset">
+          <div class="card-content">
+            <h4>Jordan Emerges as Regional Tech Hub</h4>
+            <p>Analyzing the factors driving Jordan's transformation into a key player in the Middle East's digital economy.</p>
+            <button class="read-more-btn" 
+                    onclick="event.stopPropagation(); window.location.href='https://example.com/jordan-tech-growth'">
+              Read More
+            </button>
           </div>
         </article>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer" role="contentinfo">
-    &copy; 2025 PulsePoint News. All rights reserved. | Staff Writer: John Doe | Contact: info@pulsepointnews.com
+  <!-- Footer -->
+  <footer role="contentinfo">
+    <p>&copy; 2025 PulsePoint News. All Rights Reserved.</p>
+    <p>Editorial Team: Sarah Chen, John Doe, Maria Rodriguez | Contact: editorial@pulsepointnews.com</p>
+    <p>Breaking news and analysis from across the Middle East technology sector</p>
   </footer>
-
-  <script>
-    // Prevent button click bubbling to the related card container
-    document.querySelectorAll('.related-card-content button').forEach(button => {
-      button.addEventListener('click', e => {
-        e.stopPropagation();
-      });
-    });
-  </script>
 </body>
-
 </html>
-```
-
