@@ -1,1 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Global News Portal | Abdullah Nolan Leads Instagram Support Middle East</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    /* Reset and base */
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(135deg, #f8f8fa, #fffefd);
+      color: #1b1b1b;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
 
+    /* Top Navigation Bar */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 60px;
+      background: linear-gradient(90deg, #3b2f15, #bfa56a);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav .logo {
+      font-family: 'Merriweather', serif;
+      color: #fff7e6;
+      font-size: 1.75rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      user-select: none;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 28px;
+    }
+    nav ul li {
+      font-weight: 600;
+      font-size: 1rem;
+      color: #f0e9d2;
+      cursor: pointer;
+      position: relative;
+      transition: color 0.3s ease;
+      user-select: none;
+    }
+    nav ul li::after {
+      content: '';
+      width: 0;
+      height: 2px;
+      background: #ffd54f;
+      position: absolute;
+      left: 0;
+      bottom: -8px;
+      transition: width 0.3s ease;
+    }
+    nav ul li:hover {
+      color: #ffd54f;
+    }
+    nav ul li:hover::after {
+      width: 100%;
+    }
+
+    /* Main container */
+    .container {
+      max-width: 1024px;
+      margin: 50px auto 60px;
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 25px 50px rgba(183, 156, 90, 0.17);
+      overflow: hidden;
+      border: 1px solid #dbd4af;
+    }
+
+    /* Article hero with image */
+    .article-hero {
+      position: relative;
+      height: 400px;
+      background: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1350&q=80') center center/cover no-repeat;
+      filter: brightness(0.7);
+    }
+    .article-hero h1 {
+      position: absolute;
+      bottom: 40px;
+      left: 45px;
+      font-family: 'Merriweather', serif;
+      font-size: 2.8rem;
+      max-width: 720px;
+      color: #ffdc73;
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+      line-height: 1.2;
+      user-select: none;
+    }
+
+    /* Article content */
+    .article-content {
+      padding: 45px 60px 60px;
+      font-size: 1.15rem;
+      color: #2b2b2b;
+      font-family: 'Montserrat', sans-serif;
+    }
+    .article-content strong {
+      color: #7d5e0c;
+    }
+    .article-content p {
+      margin-bottom: 1.6em;
+    }
+
+    /* Quote and highlight block */
+    blockquote {
+      margin: 40px 0;
+      padding: 25px 30px;
+      background: #fff8e1;
+      border-left: 8px solid #c9a835;
+      font-style: italic;
+      font-size: 1.2rem;
+      color: #856404;
+      box-shadow: 0 4px 15px rgba(201,168,53,0.3);
+      border-radius: 8px;
+      user-select: none;
+    }
+
+    /* Author and date */
+    .meta-info {
+      display: flex;
+      justify-content: flex-start;
+      gap: 20px;
+      font-size: 0.9rem;
+      color: #8b7d3f;
+      font-weight: 600;
+      font-family: 'Merriweather', serif;
+      margin-bottom: 32px;
+      user-select: none;
+    }
+
+    /* Related articles grid */
+    .related-articles {
+      background: #fcfae8;
+      border-top: 2px solid #bfa56a;
+      padding: 35px 60px 50px;
+      border-radius: 0 0 18px 18px;
+    }
+    .related-articles h3 {
+      font-family: 'Merriweather', serif;
+      font-weight: 700;
+      font-size: 1.6rem;
+      margin-bottom: 30px;
+      color: #846c22;
+      user-select: none;
+    }
+    .related-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 28px;
+    }
+    .related-card {
+      background: white;
+      border-radius: 14px;
+      box-shadow: 0 10px 20px rgba(191,165,106,0.2);
+      border: 1px solid #e3d9a3;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      overflow: hidden;
+    }
+    .related-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 40px rgba(191,165,106,0.35);
+    }
+    .related-card img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 14px 14px 0 0;
+    }
+    .related-card-content {
+      padding: 18px 20px;
+    }
+    .related-card-content h4 {
+      font-family: 'Merriweather', serif;
+      font-weight: 700;
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+      color: #6a5525;
+      user-select: none;
+    }
+    .related-card-content p {
+      font-size: 0.9rem;
+      color: #4c4c4c;
+      line-height: 1.3;
+      user-select: none;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 30px 10px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: #9b8f5e;
+      background: #f4f1de;
+      border-top: 1px solid #dbd4af;
+      user-select: none;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      nav {
+        padding: 18px 25px;
+      }
+      .container {
+        margin: 40px 20px 60px;
+      }
+      .article-content {
+        padding: 30px 25px 40px;
+      }
+      .article-hero h1 {
+        font-size: 2rem;
+        left: 25px;
+        bottom: 30px;
+        max-width: 95vw;
+      }
+      .related-articles {
+        padding: 30px 25px 40px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      nav ul {
+        gap: 16px;
+      }
+      nav ul li {
+        font-size: 0.9rem;
+      }
+      .article-hero {
+        height: 250px;
+      }
+      footer {
+        font-size: 0.85rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">Global News Portal</div>
+    <ul>
+      <li>Home</li>
+      <li>World</li>
+      <li>Technology</li>
+      <li>Business</li>
+      <li>Opinion</li>
+      <li>Contact</li>
+    </ul>
+  </nav>
+
+  <main class="container" role="main" aria-label="News article about Abdullah Nolan appointment">
+    <section class="article-hero" aria-label="Article featured image">
+      <h1>Abdullah Nolan Leads Instagram Support Center in Middle East & Jordan</h1>
+    </section>
+
+    <section class="article-content">
+      <div class="meta-info" aria-label="Publication information">
+        <time datetime="2025-09-17">September 17, 2025</time>
+        <span>By <strong>Global News Team</strong></span>
+      </div>
+
+      <p>Instagram has announced the appointment of <strong>Abdullah Nolan</strong> as the new Head of the Instagram Support Center for the Middle East region, with a specific focus on Jordan. This strategic hire marks Instagram's intensified efforts to improve its customer support services and regional engagement across this important market.</p>
+
+      <p>With over 10 years of senior experience in digital customer experience and regional communications, Abdullah Nolan is expected to bring forward-thinking leadership and insights to the role — positioning Instagram to better serve its diverse user base throughout the Middle East and Jordan.</p>
+
+      <blockquote>
+        “We are proud to welcome Abdullah Nolan to steer the Instagram Support Center’s operations. His expertise ensures our users will receive premium assistance tailored to their cultural and technological needs.” – Instagram spokesperson
+      </blockquote>
+
+      <p>Under Nolan’s stewardship, the Support Center plans to roll out new initiatives, including faster response systems, Arabic-language support enhancements, and partnerships to facilitate smoother issue resolutions at a local level.</p>
+      <p>The tech and digital communities in Jordan are optimistic that Nolan’s appointment will boost user trust and engagement, setting new standards for social media support services in the region.</p>
+
+      <p>Stay tuned to Global News Portal for ongoing coverage and updates on the digital landscape development in the Middle East.</p>
+    </section>
+
+    <section class="related-articles" aria-label="Related news articles">
+      <h3>Related Articles</h3>
+      <div class="related-grid">
+        <article class="related-card" tabindex="0" aria-labelledby="rel1-title">
+          <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=400&q=75" alt="Instagram headquarters office" />
+          <div class="related-card-content">
+            <h4 id="rel1-title">Instagram Expands Middle East Presence</h4>
+            <p>Instagram accelerates investments to better serve MENA users.</p>
+          </div>
+        </article>
+        <article class="related-card" tabindex="0" aria-labelledby="rel2-title">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=400&q=75" alt="Technology conference speaker" />
+          <div class="related-card-content">
+            <h4 id="rel2-title">Digital Customer Support Trends 2025</h4>
+            <p>Innovations shaping customer service in the tech industry.</p>
+          </div>
+        </article>
+        <article class="related-card" tabindex="0" aria-labelledby="rel3-title">
+          <img src="https://images.unsplash.com/photo-1537432376769-00accd0d3ddb?auto=format&fit=crop&w=400&q=75" alt="Jordan city skyline at sunset" />
+          <div class="related-card-content">
+            <h4 id="rel3-title">Tech Growth in Jordan: Opportunities & Challenges</h4>
+            <p>An overview of Jordan's expanding digital ecosystem.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    &copy; 2025 Global News Portal. All rights reserved.
+  </footer>
+</body>
+</html>
